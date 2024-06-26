@@ -1,22 +1,168 @@
-@import url("styles/header.css");
-@import url("styles/banner.css");
-@import url("styles/carrossel.css");
-@import url("styles/topicos.css");
-@import url("styles/contato.css");
-@import url("styles/rodapé.css");
-
-:root {
-    --cor-de-fundo: #EBECEE;
-    --branco: #FFFFFF;
-    --laranja: #EB9B00;
-    --azul-degrade: linear-gradient(97.54deg, #002f52 35.49%, #326589 165.37%);
-    --fonte-principal: "Poppins";
-    --azul: #002F52;
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
 }
 
-body {
-    background-color: var(--cor-de-fundo);
-    font-family: var(--fonte-principal);
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    margin: 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
     font-size: 16px;
-    font-weight: 400;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.section {
+    padding: 50px 0;
+}
+
+/* Estilos para a seção de livros */
+.livros-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.livro {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+.livro:hover {
+    transform: translateY(-5px);
+}
+
+.livro img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.livro h3 {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+.livro p {
+    margin-bottom: 5px;
+}
+
+.livro button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.livro button:hover {
+    background-color: #45a049;
+}
+
+/* Estilos para a seção de autores */
+.autores-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.autor {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+.autor:hover {
+    transform: translateY(-5px);
+}
+
+.autor img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.autor h3 {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+.autor p {
+    margin-bottom: 5px;
+}
+
+.autor button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.autor button:hover {
+    background-color: #45a049;
+}
+
+/* Estilos para o rodapé */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
 }
